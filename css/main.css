@@ -1,0 +1,39 @@
+:root {
+    --site-color-01: #333333;
+    --site-color-01-hover: #cccccc;
+    --textbox-color-01: #f5f5f5;
+    --main-text-color: black;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--site-color-01);
+    background-image: url('../img/house.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+
+.textbox {
+    height: 90%;
+    width: 98%;
+    background-color: var(--textbox-color-01);
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+.textbox p {
+    color: var(--main-text-color);
+}
+

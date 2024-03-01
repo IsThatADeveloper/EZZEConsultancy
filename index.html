@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEZZEE Consultancy</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/opening.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div class="opening-page">
+        <div class="animation-element"></div>
+    </div>
+
+</body>
+</html>
+
+<script>
+// Wait for the animation to complete, then open the main page
+document.addEventListener('DOMContentLoaded', function() {
+    var animationElement = document.querySelector('.animation-element');
+    animationElement.addEventListener('animationend', function() {
+        // After animation completes, redirect to the main page
+        window.location.href = 'html/main.html'; // Replace 'main.html' with the path to your main page
+    });
+});
+</script>
